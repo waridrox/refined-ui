@@ -1,15 +1,19 @@
-<!-- <template>
-  <div class="flex flex-wrap">
-    <div class="w-full lg:w-8/12 px-4">
+<template>
+  <div>
+    <div class="flex flex-wrap">
     </div>
-    <div class="w-full lg:w-4/12 px-4">
+    <div class="flex flex-wrap mt-4">
+      <ExampleCardsConfig/>
     </div>
   </div>
 </template>
 <script>
+import ExampleCardsConfig from "@/components/Headers/ExampleCardsConfig.vue";
 
 export default {
+  name: "dashboard-page",
   components: {
+    ExampleCardsConfig,
   },
 };
-</script> -->
+</script>

@@ -6,10 +6,15 @@ import "@/assets/styles/tailwind.css";
 import App from "@/App.vue";
 
 import Flint from "@/layouts/Flint.vue";
+import Gcbm from "@/layouts/Gcbm.vue";
 
 import Dashboard from "@/views/flint/Dashboard.vue";
 import Configurations from "@/views/flint/Configurations.vue";
 import Outputs from "@/views/flint/Outputs.vue";
+
+import GcbmDashboard from "@/views/gcbm/GcbmDashboard.vue";
+import GcbmConfigurations from "@/views/gcbm/GcbmConfigurations.vue";
+import GcbmOutputs from "@/views/gcbm/GcbmOutputs.vue";
 
 import Landing from "@/views/Landing.vue";
 
@@ -36,19 +41,19 @@ const routes = [
   {
     path: "/gcbm",
     redirect: "/gcbm/dashboard",
-    component: Flint,
+    component: Gcbm,
     children: [
       {
         path: "/gcbm/dashboard",
-        component: Dashboard,
+        component: GcbmDashboard,
       },
       {
         path: "/gcbm/configurations",
-        component: Configurations,
+        component: GcbmConfigurations,
       },
       {
         path: "/gcbm/outputs",
-        component: Outputs,
+        component: GcbmOutputs,
       },
     ],
   },

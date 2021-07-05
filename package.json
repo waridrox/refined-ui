@@ -21,7 +21,10 @@
     "tailwindcss": "2.0.4",
     "vue": "3.0.7",
     "vue-material": "^1.0.0-beta-15",
-    "vue-router": "4.0.5"
+    "vue-router": "4.0.5",
+    "axios": "^0.21.1",
+    "form-data": "^4.0.0",
+    "fs": "0.0.1-security"
   },
   "devDependencies": {
     "@babel/core": "7.13.10",
